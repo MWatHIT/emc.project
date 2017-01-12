@@ -1,5 +1,5 @@
 from plone.app.registry.browser import controlpanel
-from emc.project.interface import IDocTypeSettings
+from emc.project.interface import IDocTypeSettings，IDevTypeSettings
 from emc.project import _
 
 try:
@@ -26,8 +26,12 @@ class DocTypeSettingsEditForm(controlpanel.RegistryEditForm):
 class DocTypeSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
     form = DocTypeSettingsEditForm
 
-class DeviceSettingsControlPanel(DocTypeSettingsControlPanel):
+class DeviceSettingsEditForm(DocTypeSettingsEditForm):
+    schema = IDevTypeSettings
+    label = _(u"device types settings")
 
+class DeviceSettingsControlPanel(DocTypeSettingsControlPanel):
+    form = DeviceSettingsEditForm
 
 # DocTypeSettingsView = layout.wrap_form(
 #     DocTypeSettingsEditForm, controlpanel.ControlPanelFormWrapper)

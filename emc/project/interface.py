@@ -16,11 +16,21 @@ class IProjectContent(form.Schema):
 
 class IDocTypeSettings(Interface):
     """设置各种类型项目文档，分析文档/测试文档等，用于构建项目文档的标题词汇
-    """    
+    """
     types = schema.Set(
             title=_(u"document types"),
             description=_(u"List project folder allow add document types."),
             required=True,
             default=set(),
             value_type=schema.TextLine(title=_(u"Type")),
-        )    
+        )
+class IDevTypeSettings(Interface):
+    """复制文档类型设置
+    """
+    types = schema.Set(
+            title=_(u"device types"),
+            description=_(u"List project folder allow add device types."),
+            required=True,
+            default=set(),
+            value_type=schema.TextLine(title=_(u"Type")),
+        )
