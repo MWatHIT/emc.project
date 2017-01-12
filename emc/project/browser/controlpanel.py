@@ -29,6 +29,15 @@ class DocTypeSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
 class DeviceSettingsEditForm(DocTypeSettingsEditForm):
     schema = IDevTypeSettings
     label = _(u"device types settings")
+    description = _(u"Please enter details of available device types")
+
+    def updateFields(self):
+        super(DeviceSettingsEditForm, self).updateFields()
+        self.fields['types'].widgetFactory = TextLinesFieldWidget
+
+    def updateWidgets(self):
+        super(DeviceTypeSettingsEditForm, self).updateWidgets()
+        self.widgets['types'].rows = 8
 
 class DeviceSettingsControlPanel(DocTypeSettingsControlPanel):
     form = DeviceSettingsEditForm
