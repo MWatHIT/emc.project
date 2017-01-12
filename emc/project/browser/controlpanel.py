@@ -36,7 +36,7 @@ class DeviceSettingsEditForm(DocTypeSettingsEditForm):
         self.fields['types'].widgetFactory = TextLinesFieldWidget
 
     def updateWidgets(self):
-        super(DeviceTypeSettingsEditForm, self).updateWidgets()
+        super(DeviceSettingsEditForm, self).updateWidgets()
         self.widgets['types'].rows = 8
 
 class DeviceSettingsControlPanel(DocTypeSettingsControlPanel):
