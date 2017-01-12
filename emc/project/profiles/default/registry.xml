@@ -16,7 +16,7 @@
       <element>电磁兼容综合评估文档</element>
     </value>
   </record>
-  <record name="emc.project.interface.IDevTypeSettings.types"
+  <!-- <record name="emc.project.interface.IDevTypeSettings.types"
    interface="emc.project.interface.IDevTypeSettings" field="types">
    <default/>
    <field type="plone.registry.field.Set">
@@ -32,5 +32,5 @@
      <element>电磁兼容故障诊断设备文档</element>
      <element>电磁兼容综合评估设备文档</element>
    </value>
- </record>
+ </record> -->
 </registry>
