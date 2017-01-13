@@ -1,5 +1,5 @@
 from plone.app.registry.browser import controlpanel
-from emc.project.interface import IDocTypeSettings,IDevTypeSettings
+from emc.project.interface import IDocTypeSettings,IMaking
 from emc.project import _
 
 try:
