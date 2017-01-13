@@ -237,7 +237,7 @@
         permission="cmf.ManagePortal"
         />
     <browser:page
-        name="device-settings"
+        name="making-distributing"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         class=".controlpanel.MakingControlPanel"
         permission="cmf.ManagePortal"
