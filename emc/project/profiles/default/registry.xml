@@ -16,8 +16,8 @@
       <element>电磁兼容综合评估文档</element>
     </value>
   </record>
-  <!-- <record name="emc.project.interface.IDevTypeSettings.types"
-   interface="emc.project.interface.IDevTypeSettings" field="types">
+  <record name="emc.project.interface.IMaking.types"
+   interface="emc.project.interface.IMaking" field="types">
    <default/>
    <field type="plone.registry.field.Set">
      <description xmlns:ns0="http://xml.zope.org/namespaces/i18n" ns0:domain="emc.project" ns0:translate="">List device types here. </description>
@@ -27,10 +27,10 @@
      </value_type>
    </field>
    <value>
-     <element>电磁兼容分析设备文档</element>
-     <element>电磁兼容设计设备文档</element>
-     <element>电磁兼容故障诊断设备文档</element>
-     <element>电磁兼容综合评估设备文档</element>
+     <element>制定与下发电磁兼容分析文档</element>
+     <element>制定与下发电磁兼容设计文档</element>
+     <element>制定与下发电磁兼容故障诊断文档</element>
+     <element>制定与下发电磁兼容综合评估文档</element>
    </value>
- </record> -->
+ </record>
 </registry>

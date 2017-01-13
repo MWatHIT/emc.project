@@ -239,7 +239,7 @@
     <browser:page
         name="device-settings"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        class=".controlpanel.DocTypeSettingsControlPanel"
+        class=".controlpanel.MakingControlPanel"
         permission="cmf.ManagePortal"
         />
 

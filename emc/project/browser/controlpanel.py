@@ -26,21 +26,21 @@ class DocTypeSettingsEditForm(controlpanel.RegistryEditForm):
 class DocTypeSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
     form = DocTypeSettingsEditForm
 
-class DeviceSettingsEditForm(DocTypeSettingsEditForm):
-    schema = IDevTypeSettings
-    label = _(u"device types settings")
-    description = _(u"Please enter details of available device types")
+class MakingEditForm(DocTypeSettingsEditForm):
+    schema = IMaking
+    label = _(u"zhi ding yu xia fa")
+    description = _(u"Please enter details of available zhi ding")
 
     def updateFields(self):
-        super(DeviceSettingsEditForm, self).updateFields()
+        super(MakingEditForm, self).updateFields()
         self.fields['types'].widgetFactory = TextLinesFieldWidget
 
     def updateWidgets(self):
-        super(DeviceSettingsEditForm, self).updateWidgets()
+        super(MakingEditForm, self).updateWidgets()
         self.widgets['types'].rows = 8
 
-class DeviceSettingsControlPanel(DocTypeSettingsControlPanel):
-    form = DeviceSettingsEditForm
+class MakingControlPanel(controlpanel.ControlPanelFormWrapper):
+    form = MakingEditForm
 
 # DocTypeSettingsView = layout.wrap_form(
 #     DocTypeSettingsEditForm, controlpanel.ControlPanelFormWrapper)

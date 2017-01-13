@@ -24,13 +24,13 @@ class IDocTypeSettings(Interface):
             default=set(),
             value_type=schema.TextLine(title=_(u"Type")),
         )
-class IDevTypeSettings(IDocTypeSettings):
+class IMaking(Interface):
     """复制文档类型设置
     """
-    # types = schema.Set(
-    #         title=_(u"device types"),
-    #         description=_(u"List project folder allow add device types."),
-    #         required=True,
-    #         default=set(),
-    #         value_type=schema.TextLine(title=_(u"device Type")),
-    #     )
+    types = schema.Set(
+            title=_(u"zhi ding yu xia fa"),
+            description=_(u"List project folder allow add zhi ding yu xia fa."),
+            required=True,
+            default=set(),
+            value_type=schema.TextLine(title=_(u"zhi ding")),
+        )
