@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-07-29 01:47+0000\n"
+"POT-Creation-Date: 2017-01-12 22:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 msgid "Brief Report"
 msgstr ""
 
-#: ./behaviors/localroles.py:61
+#: ./behaviors/localroles.py:57
 msgid "Chief Designer"
 msgstr ""
 
-#: ./behaviors/localroles.py:75
+#: ./behaviors/localroles.py:71
 msgid "Chief quality engineer"
 msgstr ""
 
@@ -30,20 +30,24 @@ msgstr ""
 msgid "Commander"
 msgstr ""
 
-#: ./behaviors/localroles.py:68
+#: ./behaviors/localroles.py:64
 msgid "Deputy Chief Designer"
 msgstr ""
 
-#: ./behaviors/localroles.py:89
+#: ./behaviors/localroles.py:85
 msgid "Deputy Chief Process"
 msgstr ""
 
-#: ./behaviors/localroles.py:82
+#: ./behaviors/localroles.py:78
 msgid "Deputy Chief quality engineer"
 msgstr ""
 
-#: ./behaviors/localroles.py:52
+#: ./behaviors/localroles.py:50
 msgid "Deputy Commander"
+msgstr ""
+
+#: ./profiles/default/controlpanel.xml
+msgid "Device settings"
 msgstr ""
 
 #: ./profiles/default/controlpanel.xml
@@ -54,11 +58,11 @@ msgstr ""
 msgid "Document types settings"
 msgstr ""
 
-#: ./behaviors/localroles.py:26
+#: ./behaviors/localroles.py:28
 msgid "EMC Designer"
 msgstr ""
 
-#: ./behaviors/localroles.py:118
+#: ./behaviors/localroles.py:113
 msgid "EMC expert"
 msgstr ""
 
@@ -74,23 +78,27 @@ msgstr ""
 msgid "Not able to send notifications"
 msgstr ""
 
+#: ./browser/controlpanel.py:32
+msgid "Please enter details of available device types"
+msgstr ""
+
 #: ./browser/controlpanel.py:16
 msgid "Please enter details of available types"
 msgstr ""
 
-#: ./behaviors/localroles.py:34
+#: ./behaviors/localroles.py:36
 msgid "Product Designer"
 msgstr ""
 
-#: ./behaviors/localroles.py:190
+#: ./behaviors/localroles.py:185
 msgid "The first members"
 msgstr ""
 
-#: ./behaviors/localroles.py:195
+#: ./behaviors/localroles.py:190
 msgid "The second members"
 msgstr ""
 
-#: ./behaviors/localroles.py:201
+#: ./behaviors/localroles.py:196
 msgid "The third members"
 msgstr ""
 
@@ -98,11 +106,11 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: ./behaviors/dynamic_role_users.py:28
+#: ./behaviors/dynamic_role_users.py:29
 msgid "Workflow next processor"
 msgstr ""
 
-#: ./behaviors/dynamic_role_users.py:27
+#: ./behaviors/dynamic_role_users.py:28
 msgid "Workflow setting"
 msgstr ""
 
@@ -114,7 +122,11 @@ msgstr ""
 msgid "design"
 msgstr ""
 
-#: ./behaviors/localroles.py:110
+#: ./browser/controlpanel.py:31
+msgid "device types settings"
+msgstr ""
+
+#: ./behaviors/localroles.py:106
 msgid "dispatch staff"
 msgstr ""
 
@@ -144,7 +156,7 @@ msgstr ""
 msgid "label_attachfile"
 msgstr ""
 
-#: ./behaviors/localroles.py:96
+#: ./behaviors/localroles.py:92
 msgid "process staff"
 msgstr ""
 
@@ -172,7 +184,7 @@ msgstr ""
 msgid "public"
 msgstr ""
 
-#: ./behaviors/localroles.py:103
+#: ./behaviors/localroles.py:99
 msgid "quality manage staff"
 msgstr ""
 

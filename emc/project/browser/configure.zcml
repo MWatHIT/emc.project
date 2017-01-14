@@ -1,16 +1,16 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    xmlns:z3c="http://namespaces.zope.org/z3c"  
+    xmlns:z3c="http://namespaces.zope.org/z3c"
     i18n_domain="plone">
-    
-	<include package="plone.app.contentmenu" />    
+
+	<include package="plone.app.contentmenu" />
 
   <!-- Register static resource directory -->
 	<browser:resourceDirectory
   		name="emc.project"
   		directory="static" />
-    
+
     <browser:page
         name="emc-project-macros"
         for="*"
@@ -29,16 +29,16 @@
         permission="cmf.AddPortalContent"
         interface="zope.publisher.interfaces.browser.IBrowserPage"
         />
-</class>        
+</class>
     <browser:page
         for="emc.project.content.document.IDocument"
         class=".custom_form.DocEditForm"
         permission="emc.project.modify_doc"
         name="edit"
-        />        
+        />
 
 
-<!-- borrow 'Saving users list' behavior 's mark interface -->        
+<!-- borrow 'Saving users list' behavior 's mark interface -->
 
    <browser:viewlet
      name="noderoles"
@@ -52,12 +52,12 @@
 
   <browser:viewlet
     name="emc.project.reviewhistory"
-    for=" emc.project.indexer.IProjectContent" 
+    for=" emc.project.indexer.IProjectContent"
     manager="plone.app.layout.viewlets.interfaces.IBelowContentBody"
     class=".review_history.ReviewViewlet"
     layer="emc.theme.interfaces.IThemeSpecific"
     permission="zope2.View"
-	/>             
+	/>
 
   <!-- VIEWS FOR PROJECT -->
   <browser:pages
@@ -95,8 +95,8 @@
         menu="plone_displayviews"
         title="Album view"
         />
-       
-       
+
+
   </browser:pages>
     <browser:page
         name="listing_report"
@@ -106,7 +106,7 @@
         permission="emc.project.view_projectsummary"
         menu="plone_displayviews"
         title="Report view"
-        />   
+        />
     <browser:page
         name="view"
         template="templates/project_view.pt"
@@ -115,7 +115,7 @@
         class=".project_view.ProjectView"
         menu="plone_displayviews"
         title="Status view"/>
-        
+
     <browser:page
         name="sysajax_listings"
         template="templates/sysajax_listings_novocabulary.pt"
@@ -123,8 +123,8 @@
         permission="emc.project.view_projectsummary"
         class=".ajax_listing.sysAjaxListingView"
         menu="plone_displayviews"
-        title="system Ajax view"/>      
-    
+        title="system Ajax view"/>
+
     <browser:page
         name="ajax_listings"
         template="templates/ajax_listings_novocabulary.pt"
@@ -132,8 +132,8 @@
         permission="emc.project.view_projectsummary"
         class=".ajax_listing.ajaxListingView"
         menu="plone_displayviews"
-        title="Ajax view"/>  
-  
+        title="Ajax view"/>
+
   <!-- VIEWS FOR TEAM -->
   <browser:pages
       for="emc.project.content.team.ITeam"
@@ -170,8 +170,8 @@
         menu="plone_displayviews"
         title="Album view"
         />
- 
-                
+
+
   </browser:pages>
     <browser:page
         name="listing_report"
@@ -181,7 +181,7 @@
         permission="emc.project.view_team"
         menu="plone_displayviews"
         title="Report view"
-        />          
+        />
     <browser:page
         name="view"
         template="templates/team_view.pt"
@@ -189,7 +189,7 @@
         permission="emc.project.view_team"
         class=".team_view.TeamView"
         menu="plone_displayviews"
-        title="Status view"/>        
+        title="Status view"/>
 
   <!-- VIEWS FOR projectfolder -->
   <browser:pages
@@ -227,15 +227,21 @@
         menu="plone_displayviews"
         title="Album view"
         />
-  </browser:pages>       
-	
+  </browser:pages>
+
     <!-- Control panel form -->
-    <browser:page 
+    <browser:page
         name="type-settings"
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         class=".controlpanel.DocTypeSettingsControlPanel"
         permission="cmf.ManagePortal"
         />
- 
+    <browser:page
+        name="making-distributing"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        class=".controlpanel.MakingControlPanel"
+        permission="cmf.ManagePortal"
+        />
+
 
 </configure>

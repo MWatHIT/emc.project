@@ -4,14 +4,25 @@
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     i18n:domain="emc.project"
     purge="False">
-    
+
     <configlet
         title="Document Types"
         action_id="documenttypes"
-        appId="documenttypes" 
+        appId="documenttypes"
         category="Products"
         condition_expr=""
         url_expr="string:${portal_url}/@@type-settings"
+        visible="True"
+        i18n:attributes="title">
+            <permission>Manage portal</permission>
+    </configlet>
+    <configlet
+        title="Device settings"
+        action_id="devicesettings"
+        appId="devicesettings"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@device-settings"
         visible="True"
         i18n:attributes="title">
             <permission>Manage portal</permission>
