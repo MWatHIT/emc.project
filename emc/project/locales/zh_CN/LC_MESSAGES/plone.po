@@ -191,7 +191,7 @@ msgid "Status view"
 msgstr "状态视图"
 
 msgid "Ajax view"
-msgstr "Ajax视图"
+msgstr "查询视图"
 
 msgid "ModificationDate"
 msgstr "修改时间"
@@ -201,5 +201,3 @@ msgstr "文件夹视图"
 
 msgid "Report view"
 msgstr "简报视图"
-
-
