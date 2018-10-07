@@ -19,7 +19,7 @@ class IProjectContent(form.Schema,IBasic):
     """
     emc project  content type base interface
     """
-   
+
 
 class IDocTypeSettings(Interface):
     """设置各种类型项目文档，分析文档/测试文档等，用于构建项目文档的标题词汇
@@ -31,6 +31,7 @@ class IDocTypeSettings(Interface):
             default=set(),
             value_type=schema.TextLine(title=_(u"Type")),
         )
+
 class IMaking(Interface):
     """复制文档类型设置
     """

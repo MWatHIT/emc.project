@@ -26,7 +26,7 @@ class DocTypeSettingsEditForm(controlpanel.RegistryEditForm):
 class DocTypeSettingsControlPanel(controlpanel.ControlPanelFormWrapper):
     form = DocTypeSettingsEditForm
 
-class MakingEditForm(DocTypeSettingsEditForm):
+class MakingEditForm(controlpanel.RegistryEditForm):
     schema = IMaking
     label = _(u"zhi ding yu xia fa")
     description = _(u"Please enter details of available zhi ding")
@@ -38,6 +38,9 @@ class MakingEditForm(DocTypeSettingsEditForm):
     def updateWidgets(self):
         super(MakingEditForm, self).updateWidgets()
         self.widgets['types'].rows = 8
+
+class MakingControlPanel(controlpanel.ControlPanelFormWrapper):
+    form = MakingEditForm
 
 class MakingControlPanel(controlpanel.ControlPanelFormWrapper):
     form = MakingEditForm
